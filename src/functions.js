@@ -24,6 +24,16 @@ export function fetchData() {
             const sig = data.signature;
             document.querySelector('#signature').innerHTML = sig;
         });
-}
+        const pfp = document.querySelector('#pfp');
+        const img = "https://my-ocular.jeffalo.net/api/user/" + input + "/picture";
+        pfp.src = img;
+        }
+
+        document.getElementById('input').addEventListener('keyup', function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                fetchData();
+            }
+        });
 
 export default fetchData;

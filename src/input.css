@@ -3,14 +3,11 @@
 @tailwind utilities;
 
 @layer components {
-    input {
-        @apply p-1 rounded-lg;
-    }
     #nav li {
         @apply text-4xl;
     }
     body {
-        @apply bg-gray-900;
+        @apply bg-gray-800;
     }
     * {
     @apply text-white
