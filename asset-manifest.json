@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/MyScratchPage-React/static/css/main.e5cabed9.css",
-    "main.js": "/MyScratchPage-React/static/js/main.291d8518.js",
+    "main.css": "/MyScratchPage-React/static/css/main.2297f4d8.css",
+    "main.js": "/MyScratchPage-React/static/js/main.9b1115e0.js",
     "index.html": "/MyScratchPage-React/index.html",
-    "main.e5cabed9.css.map": "/MyScratchPage-React/static/css/main.e5cabed9.css.map",
-    "main.291d8518.js.map": "/MyScratchPage-React/static/js/main.291d8518.js.map"
+    "main.2297f4d8.css.map": "/MyScratchPage-React/static/css/main.2297f4d8.css.map",
+    "main.9b1115e0.js.map": "/MyScratchPage-React/static/js/main.9b1115e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5cabed9.css",
-    "static/js/main.291d8518.js"
+    "static/css/main.2297f4d8.css",
+    "static/js/main.9b1115e0.js"
   ]
 }
