@@ -1,27 +1,53 @@
-import Navbar from './components/nav/nav'
-import './index.css';
-import fetchData from './functions.js'
-const React = require('react');
+import Navbar from "./components/nav/nav";
+import "./index.css";
+import fetchData from "./functions.js";
+const React = require("react");
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
       <header className="App-header">
-        <div  id="bar" class="m-0 space-y-2 text-white bg-gray-700 p-3">
-        <input class="p-3 h-12 m-0 w-full bg-gray-600 rounded-lg text-white" id="input" placeholder="user"></input>
+        <input
+          onChange={(event) => {
+            this.setState({ query: event.target.value });
+          }}
+          onKeyPress={(event) => {
+            if (event.key === "Enter") {
+              fetchData();
+            }
+          }}
+          class="p-3 w-full bg-gray-600 text-white"
+          id="input"
+          placeholder="Username"
+        ></input>
         <br></br>
-          <div class="space-x-2 flex" id="userArea">
-        <img id="pfp"></img>
-        <span class="bg-gray-200 rounded-sm text-black text-6xl" id="username"></span>
-        <span class="text-2xl bg-gray-200 rounded-sm text-black" id="motd"></span>
+        <div
+          class="space-x-2 flex bg-gray-600 m-4 rounded-sm p-3"
+          id="userArea"
+        >
+          <img class="rounded-sm" id="pfp"></img>
+          <span
+            class="bg-gray-200 rounded-sm text-black text-4xl"
+            id="username"
+          ></span>
+          <span
+            class="text-4xl bg-gray-200 w-[80.5vw] rounded-sm text-black"
+            id="motd"
+          ></span>
         </div>
-        <br></br>
-        <span id="signature"></span>
+        <div class="w-fit m-auto flex space-x-2 bg-gray-600 text-white p-3 rounded-sm">
+          <p class="text-4xl ">Posts:</p>
+          <p class="text-4xl text-blue-500" id="totalPosts">
+            {" "}
+          </p>
+          <p class="text-4xl">Top Forum:</p>
+          <p class="text-4xl text-emerald-500" id="topForum"></p>
         </div>
+        <p class="bg-gray-600 p-3 rounded-sm m-4" id="signature"></p>
       </header>
     </div>
   );
-} 
+}
 
 export default App;

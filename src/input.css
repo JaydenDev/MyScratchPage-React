@@ -4,7 +4,6 @@
 
 @layer components {
     #nav li {
-        @apply text-4xl;
     }
     body {
         @apply bg-gray-800;
