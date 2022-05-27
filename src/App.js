@@ -43,14 +43,14 @@ function App() {
           ></span>
         </div>
         <div class="w-fit m-auto flex space-x-2 bg-gray-600 text-white p-3 rounded-sm">
-          <p class="text-4xl ">Posts:</p>
-          <p class="text-4xl text-blue-500" id="totalPosts">
+          <div class="text-4xl ">Posts:</div>
+          <div class="text-4xl text-blue-500" id="totalPosts">
             {" "}
-          </p>
-          <p class="text-4xl">Top Forum:</p>
-          <p class="text-4xl text-emerald-500" id="topForum"></p>
+          </div>
+          <div class="text-4xl">Top Forum:</div>
+          <div class="text-4xl text-emerald-500" id="topForum"></div>
         </div>
-        <p class="bg-gray-600 p-3 rounded-sm m-4" id="signature"></p>
+        <div class="bg-gray-600 p-3 rounded-sm m-4" id="signature"></div>
       </header>
       
     </div>
