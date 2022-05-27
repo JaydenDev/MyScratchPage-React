@@ -10,13 +10,19 @@ function App() {
       <header className="App-header">
         <input
           onChange={(event) => {
-            this.setState({ query: event.target.value });
-          }}
-          onKeyPress={(event) => {
-            if (event.key === "Enter") {
-              fetchData();
+            try {this.setState({ query: event.target.value })}
+            catch (error) {
+              return;
             }
           }}
+          onKeyPress={(event) => {
+            try {
+            {if (event.key === "Enter")
+              fetchData();
+            }
+          } catch (error) {
+            return;
+          }}}
           class="p-3 w-full bg-gray-600 text-white"
           id="input"
           placeholder="Username"
@@ -46,6 +52,7 @@ function App() {
         </div>
         <p class="bg-gray-600 p-3 rounded-sm m-4" id="signature"></p>
       </header>
+      
     </div>
   );
 }

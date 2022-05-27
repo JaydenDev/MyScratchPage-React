@@ -2,6 +2,7 @@ const $ = document.querySelector.bind(document);
 var sig = "appCompat";
 
 export function fetchData() {
+  try {
   const input = document.getElementById("input").value;
   const username = document.getElementById("input").value;
   document.querySelector("#username").innerHTML = username;
@@ -9,7 +10,11 @@ export function fetchData() {
     .then((res) => res.json())
     .then((data) => {
       const { status } = data;
-      document.getElementById("amotd").innerText = "Aviate Status: " + status;
+      try {
+      document.getElementById("amotd").innerText = "Aviate Status: " + status}
+      catch (error) {
+        return;
+      }
     });
   fetch("https://my-ocular.jeffalo.net/api/user/" + input)
     .then((res) => res.json())
@@ -42,5 +47,8 @@ export function fetchData() {
         pfp.src = img;
       }
     });
+  } catch (error) {
+    return;
+  }
 }
 export default fetchData;
