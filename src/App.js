@@ -1,11 +1,10 @@
 import Navbar from "./components/nav/nav";
-import "./index.css";
-import fetchData from "./functions.js";
 const React = require("react");
 
 function App() {
   return (
     <div className="App">
+      <link rel="stylesheet" href="./index.css"/>
       <Navbar />
       <header className="App-header">
         <input
