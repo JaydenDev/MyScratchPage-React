@@ -23,34 +23,34 @@ function App() {
           } catch (error) {
             return;
           }}}
-          class="p-3 w-full bg-gray-600 text-white"
+          className="p-3 w-full bg-gray-600 text-white"
           id="input"
           placeholder="Username"
         ></input>
         <br></br>
         <div
-          class="space-x-2 flex bg-gray-600 m-4 rounded-sm p-3"
+          className="space-x-2 flex bg-gray-600 m-4 rounded-sm p-3"
           id="userArea"
         >
-          <img class="rounded-sm" id="pfp"></img>
+          <img className="rounded-sm" id="pfp"></img>
           <span
-            class="bg-gray-200 rounded-sm text-black text-4xl"
+            className="bg-gray-200 rounded-sm text-black text-4xl"
             id="username"
           ></span>
           <span
-            class="text-4xl bg-gray-200 w-[80.5vw] rounded-sm text-black"
+            className="text-4xl bg-gray-200 w-[80.5vw] rounded-sm text-black"
             id="motd"
           ></span>
         </div>
-        <div class="w-fit m-auto flex space-x-2 bg-gray-600 text-white p-3 rounded-sm">
-          <div class="text-4xl ">Posts:</div>
-          <div class="text-4xl text-blue-500" id="totalPosts">
+        <div className="w-fit m-auto flex space-x-2 bg-gray-600 text-white p-3 rounded-sm">
+          <div className="text-4xl ">Posts:</div>
+          <div className="text-4xl text-blue-500" id="totalPosts">
             {" "}
           </div>
-          <div class="text-4xl">Top Forum:</div>
-          <div class="text-4xl text-emerald-500" id="topForum"></div>
+          <div className="text-4xl">Top Forum:</div>
+          <div className="text-4xl text-emerald-500" id="topForum"></div>
         </div>
-        <div class="bg-gray-600 p-3 rounded-sm m-4" id="signature"></div>
+        <div className="bg-gray-600 p-3 rounded-sm m-4" id="signature"></div>
       </header>
       
     </div>

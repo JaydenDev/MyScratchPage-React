@@ -48,6 +48,7 @@ export function fetchData() {
       }
     });
   } catch (error) {
+    alert('Unfortunately, it appears that ScratchDB is down. Try again later!')
     return;
   }
 }
