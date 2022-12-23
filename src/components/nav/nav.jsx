@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import fetchData from "../../functions";
 
 class Navbar extends React.Component {
   render() {
